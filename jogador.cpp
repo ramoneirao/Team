@@ -39,12 +39,12 @@ Jogador::~Jogador( )
     for( int i = 0; i < this->timesJogados.size( ); i++ )
         cout << this->timesJogados[ i ] << "\n";
 }
-
+/*
 void Jogador::deletaTimesJogados() 
 { 
     timesJogados.clear();
 }
-
+*/
 ostream &operator<<( ostream &out, const Jogador &p )
 {
     out << "Nome do Jogador: ";

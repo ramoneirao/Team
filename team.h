@@ -56,7 +56,6 @@ private:
 
     static int numTimes;
 
-
 	vector< Jogador * > jogadores;
 
 	vector < Diretoria * > membros;

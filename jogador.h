@@ -23,7 +23,7 @@ public:
     ~Jogador( );
 
     void printTimesJogados( ) const;
-    void deletaTimesJogados( );
+    //void deletaTimesJogados( );
 
 private:
 
