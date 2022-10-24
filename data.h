@@ -6,7 +6,6 @@ class Data
 public:
     
     Data( int = 1, int = 1, int = 1900 );
-    
     void print() const;
     
 private:

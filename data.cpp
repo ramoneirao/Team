@@ -5,14 +5,12 @@ using std::cout;
 
 Data::Data(int d, int m, int a) 
 {
-    if ( m > 0 && m <= 12 ) // validate the month
+    if ( m > 0 && m <= 12 )
         mes = m;
-    
     if ( a < 0 )
         ano = 1900;
     else
         ano = a;
-   
     dia = VerificaDia(d);
 
 }
@@ -20,7 +18,6 @@ Data::Data(int d, int m, int a)
 void Data::print() const
 {
    cout << dia << '/' << mes << '/' << ano;
-   
 }
 
 int Data::VerificaDia(int diaTeste) const

@@ -7,9 +7,6 @@ using std::vector;
 #include <string>
 using std::string;
 
-#include <vector>
-using std::vector;
-
 #include "jogador.h"
 #include "data.h"
 #include "diretoria.h"
@@ -24,14 +21,13 @@ struct Tecnico {
 
 class Team
 {
-
     friend ostream &operator<<( ostream &, const Team & );
 
 public:
 
 	Team( );
 	Team( const Team &);
-	Team( string , const Data & = Data( 12, 8, 1904) );
+	Team( string , const Data & = Data( 12, 8, 1904 ) );
 	~Team( );
     
 	static void informacoes( );
@@ -39,7 +35,7 @@ public:
 	void mostrarData( ) const;
 
 	void printJogadores( ) const;
-
+	
 	void deletaTimesJogados(vector< string > &);
 
 	void addJogador( const Jogador & ); 

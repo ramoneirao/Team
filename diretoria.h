@@ -22,10 +22,11 @@ public:
     ~Diretoria( );
 
     void printDiretoria( ) const;
+
     void printMembros( ) const;
 
-
     void addMembro( const Diretoria & ); 
+    
 	void addMembro( const string &, const vector< string > & );
 
 private:

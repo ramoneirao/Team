@@ -14,7 +14,6 @@ using std::vector;
 class Jogador
 {
     friend ostream &operator<<( ostream &, const Jogador & );
-    friend class Team;
     
 public:
     Jogador( );
@@ -23,7 +22,6 @@ public:
     ~Jogador( );
 
     void printTimesJogados( ) const;
-    //void deletaTimesJogados( );
 
 private:
 

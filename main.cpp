@@ -11,7 +11,6 @@ using std::endl;
 #include "diretoria.h"
 #include "diretoria.cpp"
 
-
 int main()
 {
    Team time1("Botafogo");

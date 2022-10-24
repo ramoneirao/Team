@@ -9,7 +9,6 @@ Jogador::Jogador( )
 Jogador::Jogador( const string &name, const string& posicao,  const vector< string > &timesJogados )
 {
     this->name = name;
-
     this->posicao = posicao;
     
     this->timesJogados.resize( timesJogados.size() );
@@ -39,21 +38,14 @@ Jogador::~Jogador( )
     for( int i = 0; i < this->timesJogados.size( ); i++ )
         cout << this->timesJogados[ i ] << "\n";
 }
-/*
-void Jogador::deletaTimesJogados() 
-{ 
-    timesJogados.clear();
-}
-*/
-ostream &operator<<( ostream &out, const Jogador &p )
+
+ostream &operator<<( ostream &out, const Jogador &jogador )
 {
     out << "Nome do Jogador: ";
-    out << p.name << "\n";
-    
+    out << jogador.name << "\n"; 
     out << "Posicao do jogador: ";
-    out << p.posicao << "\n";
-
-    p.printTimesJogados( );
+    out << jogador.posicao << "\n";
+    jogador.printTimesJogados( );
 
     return out;
 }
